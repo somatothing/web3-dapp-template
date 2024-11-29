@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #141e30;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+}
+
+.navbar .menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  background: #243b55;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  border-radius: 5px;
+}
+
+.dropdown ul li {
+  padding: 10px;
+  text-align: right;
+}
+
+.dropdown ul li a {
+  color: white;
+  text-decoration: none;
+}
