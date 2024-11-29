@@ -1,0 +1,19 @@
+.footer {
+  background: #141e30;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer .social-links li a {
+  color: white;
+  text-decoration: none;
+}
