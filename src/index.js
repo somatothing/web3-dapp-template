@@ -1,15 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client"; // Updated import
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
 
-ReactDOM.render(
+// Find the root element in your HTML
+const rootElement = document.getElementById("root");
+
+// Create a React root and render the application
+const root = ReactDOM.createRoot(rootElement); // Updated method
+root.render(
   <React.StrictMode>
-    <HashRouter>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-    </HashRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

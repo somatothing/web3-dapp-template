@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class'],
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  darkMode: ['class'], // Enables dark mode with the 'class' strategy
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'], // Specify content paths
   theme: {
     container: {
       center: true,
@@ -16,7 +16,7 @@ module.exports = {
         screen_minus_header: 'calc(100vh - 56px)',
       },
       margin: {
-        after_header: '56px 0 0',
+        after_header: '56px',
       },
       colors: {
         background: '#000',
@@ -24,8 +24,8 @@ module.exports = {
         anchor: '#0ec8ff',
       },
       borderRadius: {
-        lg: `0.5rem`,
-        md: `calc(0.5rem - 2px)`,
+        lg: '0.5rem',
+        md: 'calc(0.5rem - 2px)',
         sm: 'calc(0.5rem - 4px)',
       },
       fontSize: {
@@ -43,5 +43,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('tailwindcss-radix')()],
-}
+  plugins: [
+    require('tailwindcss-animate'), // Ensure this plugin is installed
+    require('tailwindcss-radix')(), // Ensure this plugin is installed
+  ],
+};

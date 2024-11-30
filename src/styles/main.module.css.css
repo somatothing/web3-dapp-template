@@ -1,0 +1,52 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.side-panel {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.side-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-panel li {
+  margin-bottom: 15px;
+}
+
+.side-panel a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.side-panel a.active {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+

@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--footer-background, #000);
+  color: var(--footer-color, #fff);
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--footer-link-color, #0ec8ff);
+}
+
+.footer a:hover {
+  color: var(--footer-link-hover-color, #1fa0d0);
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

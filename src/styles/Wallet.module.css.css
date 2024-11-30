@@ -1,0 +1,39 @@
+/* styles/Wallet.css */
+.wallet-ui {
+  padding: 20px;
+  background: #141e30;
+  color: white;
+  border-radius: 10px;
+}
+
+.wallet-ui h2, .wallet-ui h3 {
+  color: #e3e3e3;
+}
+
+.animated-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #8f94fb, #4e54c8);
+}
+
+.token-list ul, .transaction-list ul, .wallet-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.token-list li, .transaction-list li, .wallet-info li {
+  padding: 5px 0;
+}
+
+.transaction-list li p {
+  margin: 0;
+}
